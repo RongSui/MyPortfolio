@@ -79,6 +79,7 @@ main img {
 main article {
     position: relative;
     padding:5px;
+ border:1px solid red;
 }
 .right h3 {
     width:100%;
