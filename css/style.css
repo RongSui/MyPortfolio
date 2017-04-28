@@ -69,18 +69,18 @@ main .right {
 }
 
 .left h3, .right h3 {
-   font-size: 2rem;
+    font-size: 2rem;
 }
 
 main img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 main article {
     position: relative;
     padding:5px;
- border:1px solid red;
 }
+
 .right h3 {
     width:100%;
 }
