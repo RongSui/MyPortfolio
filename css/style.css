@@ -1,0 +1,170 @@
+* {
+/* border: 1px solid red;*/
+ box-sizing:border-box;
+ font-size:16px;
+}
+
+body{
+font-family: 'Open Sans', sans-serif;
+width:90%;
+margin:0 auto;
+}
+
+.contactInfo {
+  margin-top: 40px;
+}
+
+.bkimg {
+  background: url('bkimg.jpg');
+  background-size: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
+}
+
+header, main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+header h1 {
+  font-size:3rem;
+  font-family: 'Apple Chancery';
+}
+
+header .nameTitle, header .contactInfo {
+    width:50%;
+}
+
+header .contactInfo {
+    text-align: right;
+}
+
+main {
+    border-bottom: 2px solid #838487;
+    border-top: 2px solid #838487;
+    position: relative;
+}
+
+main .left {
+    width: 30%;
+    padding:5px;
+    margin-right:3%;
+    overflow: hidden;
+    border-right:2px dotted #838487;
+}
+
+main .right {
+    width:67%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.left h3, .right h3 {
+   font-size: 2rem;
+}
+
+main img {
+  max-width: 100%;
+}
+
+main article {
+    position: relative;
+    padding:5px;
+}
+.right h3 {
+    width:100%;
+}
+
+.right .sub-feature {
+    width: 50%;
+}
+
+.sub-feature:hover.sub-feature .description {
+   cursor:pointer;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   overflow:hidden;
+   text-overflow: ellipsis;
+   -webkit-line-clamp: 3;
+   text-align: center;
+   width:100%;
+   opacity: 1;
+   transition: all .6s ease;
+}
+
+.sub-feature p {
+  font-size:1.5rem;
+}
+.sub-feature:hover.sub-feature img{
+  -webkit-filter:blur(10px);
+          filter:blur(10px);
+}
+
+.description a{
+    color: rgba(0,0,0,0.6);
+    font-weight: bolder;
+    font-size: 2.5vw;
+    display: inline-block;
+    width:100%;
+}
+
+.description a p {
+  line-height:1.5;
+}
+
+.description {
+    position:absolute;
+    left:0;
+    top:20%;
+    opacity: 0;
+}
+
+footer {
+  position: relative;
+}
+
+.social-media {
+  text-align: center;
+  padding:10px;
+  margin:5px;
+  z-index: 1000;
+  position:absolute;
+  top:0;
+  left:40%;
+  opacity: 0.7;
+}
+
+.social-media .fa {
+  width:50px;
+  padding:5px;
+  color:white;
+  text-align: center;
+  font-size: 2rem;
+
+}
+
+.social-media a {
+  margin:0 5px;
+  z-index: 1000;
+}
+
+.social-media .fa-facebook {
+  background-color: #3b5998;
+}
+
+.social-media  .fa-github {
+  background-color: #000;
+}
+
+.social-media .fa-linkedin {
+ background-color: #007bb5;
+}
