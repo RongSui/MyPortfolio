@@ -109,6 +109,10 @@ main article {
           filter:blur(10px);
 }
 
+article img {
+ max-width:100%;
+}
+
 .description a{
     color: rgba(0,0,0,0.6);
     font-weight: bolder;
